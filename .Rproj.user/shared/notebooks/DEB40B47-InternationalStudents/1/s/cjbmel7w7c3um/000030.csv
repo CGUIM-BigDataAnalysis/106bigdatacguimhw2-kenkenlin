@@ -1,0 +1,13 @@
+"0","ggplot(countryCode1)+"
+"0","  geom_bar(aes(x =  iso_a3, y = cCount),"
+"0","           stat = ""identity"")+"
+"0","  theme_stata() + scale_colour_stata()+"
+"0","  theme(axis.text.x = element_text(angle = 90,vjust = 0.3, hjust = 1))+"
+"0","  labs(x=""國家"",y=""單位(人)"",title = ""最喜歡去國家進修交流條狀圖"")"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"

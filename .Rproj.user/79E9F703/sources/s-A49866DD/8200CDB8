@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527524255728.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8200CDB8",
+    "lastKnownWriteTime" : 32370120545140837,
+    "last_content_update" : 1527524255728,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "16DB8868",
+        "caption" : "wldData1",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=wldData1&cache_key=16DB8868",
+        "displayedObservations" : 149,
+        "environment" : "",
+        "object" : "wldData1",
+        "preview" : 0,
+        "totalObservations" : 149,
+        "variables" : 2
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

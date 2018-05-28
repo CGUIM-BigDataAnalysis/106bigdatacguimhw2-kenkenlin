@@ -1,0 +1,1 @@
+"0","knitr::kable(head(analData[order(analData$TYPE,decreasing = T),][c(-1,-2,-3,-4),],10))"

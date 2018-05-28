@@ -1,0 +1,12 @@
+"0","perColPop<- mutate(perColPop,"
+"0","                   SumPop = rowSums( perColPop[,-1],"
+"0","                                     na.rm = TRUE))%>%"
+"0","  arrange(desc(SumPop))"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","knitr::kable(subset(perColPop[,c(1,6)],`學校名稱`==""國立臺灣師大僑生先修部""))"

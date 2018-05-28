@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527139083681.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "248|35|279|21|\n280|28|295|6|\n",
+    "hash" : "1993703735",
+    "id" : "943FD3E5",
+    "lastKnownWriteTime" : 1527511474,
+    "last_content_update" : 1527511474239,
+    "path" : "~/GitHub/106bigdatacguimhw2-kenkenlin/AnalPro.R",
+    "project_path" : "AnalPro.R",
+    "properties" : {
+        "cursorPosition" : "355,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

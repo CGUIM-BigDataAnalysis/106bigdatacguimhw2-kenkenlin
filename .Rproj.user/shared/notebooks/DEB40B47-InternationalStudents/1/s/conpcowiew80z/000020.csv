@@ -1,0 +1,66 @@
+"0","TWtoWld <- read_csv(""Student_RPT_07.csv"", "
+"0","                    locale = locale(encoding = ""BIG5""),"
+"0","                    skip = 1)"
+"2","Missing column names filled in: 'X4' [4], 'X5' [5], 'X6' [6], 'X12' [12], 'X14' [14], 'X15' [15]"
+"2","Parsed with column specification:
+cols(
+  ¾Ç¦~«× = col_integer(),
+  ¾Ç´Á = col_integer(),
+  ¾Ç®Õ = col_character(),
+  X4 = col_character(),
+  X5 = col_character(),
+  X6 = col_character(),
+  ¨t©Ò¥N½X = col_integer(),
+  ¨t©Ò¦WºÙ = col_character(),
+  ¾Ç¨î = col_character(),
+  `¹ï¤è¾Ç®Õ(¾÷ºc)°ê§O(¦a°Ï)` = col_character(),
+  `¹ï¤è¾Ç®Õ(¾÷ºc)¦WºÙ` = col_character(),
+  X12 = col_character(),
+  `¥»°ê¾Ç¥Í¥X°ê¶i­×¡B¥æ¬y¤H¼Æ` = col_character(),
+  X14 = col_character(),
+  X15 = col_character()
+)
+"
+"2","number of columns of result is not a multiple of vector length (arg 1)"
+"2","10 parsing failures.
+row [38;5;246m# A tibble: 5 x 5[39m col     row col      expected               actual                                                    file     expected   [3m[38;5;246m<int>[39m[23m [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<chr>[39m[23m                  [3m[38;5;246m<chr>[39m[23m                                                     [3m[38;5;246m<chr>[39m[23m    actual [38;5;250m1[39m [4m2[24m[4m3[24m580 ¨t©Ò¥N½X no trailing characters A2                                                        'Studen~ file [38;5;250m2[39m [4m3[24m[4m4[24m285 ¨t©Ò¥N½X no trailing characters A2                                                        'Studen~ row [38;5;250m3[39m [4m3[24m[4m5[24m023 ¾Ç¦~«×   an integer             ²Î­p»¡©ú¡G                                                'Studen~ col [38;5;250m4[39m [4m3[24m[4m5[24m024 ¾Ç¦~«×   no trailing characters . ¥»ªí³]¥ß§O«Y«ü¡i¤½¥ß¡B¨p¥ß¡j¤j¾Ç®Õ°|µ¥¤ÀÃþ¡F¾Ç®ÕÃþ§O«Y«ü¡i¤@¯ë¤j¾Ç¡B§Þ±M®Õ°|¡jµ¥¡F¾Ç®Õ¦WºÙ«Y«ü¡i¾Ç®Õ®Õ¦W¡j¡F~ 'Studen~ expected [38;5;250m5[39m [4m3[24m[4m5[24m025 ¾Ç¦~«×   no trailing characters . ¥»ªí¡u¾Ç¨î¡v«Y«ü¡i¤G±M(¤é¶¡)¡B¤G±M(¶i­×)¡B¤­±M¡B¾Ç¤h¯Z(¤é¶¡)¡B¾Ç¤h¯Z(¶i­×)¡BºÓ¤h¯Z(¤é¶¡)¡BºÓ¤h¦bÂ¾~ 'Studen~
+... ................................. ... .......................................................................................................... ........ ....................................................................................................................................................................................................................................... ...... ........................................................................................................................................ .... ........................................................................................................................................ ... .................................................................................................................................... ... ......................................................................................................................................... ........ .........................................................................................................................................
+See problems(...) for more details.
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","TWtoWldNAME<-colnames(TWtoWld)"
+"0","TWtoWldNAME01<-TWtoWld[1,]"
+"0","colnames(TWtoWld)[c(3,4,5,6,11,12,13,14,15)]<-TWtoWldNAME01[c(3,4,5,6,11,12,13,14,15)]"
+"0","TWtoWld <- TWtoWld[-1,]"
+"0","remove(TWtoWldNAME01,TWtoWldNAME)"
+"0","TWtoWld$`å°è¨ˆ`<-as.numeric(TWtoWld$`å°è¨ˆ`)"
+"0","TWtoWld$`ç”·`<-as.numeric(TWtoWld$`ç”·`)"
+"0","TWtoWld$`å¥³`<-as.numeric(TWtoWld$`å¥³`)"
+"0","TWtoWld1 <- TWtoWld"
+"0","library(readr)"
+"0","EZ <- read_csv(""EZ.csv"", "
+"0","               locale = locale(encoding = ""BIG5""))"
+"2","Parsed with column specification:
+cols(
+  ¬Fªv¹êÅé = col_character(),
+  GEC¥N½X = col_character(),
+  `ISO 3166-1¤G¦ì¦r¥À¥N½X` = col_character(),
+  `ISO 3166-0¤T¦ì¦r¥À¥N½X` = col_character(),
+  ¤T¦ì¼Æ¦r¥N½X = col_character(),
+  Stanag¼Ð·Ç¤Æ°ê½X = col_character(),
+  ºô»Úºô¸ô = col_character(),
+  µù»¡ = col_character()
+)
+"
+"0","colnames(EZ)<-c(""å°æ–¹å­¸æ ¡(æ©Ÿæ§‹)åœ‹åˆ¥(åœ°å€)"",	""GECä»£ç¢¼"",""äºŒä½å­—æ¯ä»£ç¢¼"",""iso_a3"",""ISO 3166-1ä¸‰ä½æ•¸å­—ä»£ç¢¼"",""STANAG_1059Stanagæ¨™æº–åŒ–åœ‹ç¢¼"",""ç¶²éš›ç¶²è·¯""	,""è¨»èªª"")"
+"0","wldData1<-group_by(TWtoWld1,`å°æ–¹å­¸æ ¡(æ©Ÿæ§‹)åœ‹åˆ¥(åœ°å€)`)%>% "
+"0","  summarise(cCount = sum(`å°è¨ˆ`,na.rm = T))%>%"
+"0","  arrange(desc(cCount))"
+"0","countryCode1<-left_join( wldData1,EZ[,c(1,4)] ,by =  ""å°æ–¹å­¸æ ¡(æ©Ÿæ§‹)åœ‹åˆ¥(åœ°å€)"")"
+"0","countryCode1[grep(""[A-Z]{3}"",countryCode1$iso_a3,invert=T),]"

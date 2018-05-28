@@ -1,0 +1,215 @@
+"0","library(readODS)"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","library(rio)"
+"0","library(readr)"
+"0","library(dplyr)"
+"0","library(rvest)"
+"0","library(ggmap)"
+"0","library(RColorBrewer)"
+"0","library(choroplethr)"
+"0","library(choroplethrMaps)"
+"0","library(ggthemes)"
+"0","OOOPop103_N<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=25f64d5125016dcd6aed42e50c972ed0"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop104_N<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=4d3e9b37b7b0fd3aa18a388cdbc77996"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop105_N<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=19bedf88cf46999da12513de755c33c6"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop106_N<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=50e3370f9f8794f2054c0c82a2ed8c91"")"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop103_C<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=a6d1469f39fe41fb81dbfc373aef3331"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_character(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop104_C<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=8baeae81cba74f35cf0bb1333d3d99f5"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í` = col_integer(),
+  `¾Ç¦ì¥Í-¹´¥Í(§t´ä¿D)` = col_integer(),
+  `¾Ç¦ì¥Í-¥¿¦¡­×Åª¾Ç¦ì³°¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°ê¥æ´«¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í` = col_integer(),
+  `«D¾Ç¦ì¥Í-¤j³°¬ã­×¥Í` = col_character(),
+  `«D¾Ç¦ì¥Í-®ü«C¯Z` = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop105_C<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=1a485383cf9995da679c3798ab4fd681"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop106_C<-read_csv(""https://quality.data.gov.tw/dq_download_csv.php?nid=6289&md5_url=883e2ab4d5357f70bea9ac44a47d05cc"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç®ÕÃþ«¬ = col_character(),
+  ¾Ç®Õ¥N½X = col_character(),
+  ¾Ç®Õ¦WºÙ = col_character(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì¥~°ê¥Í = col_integer(),
+  `¾Ç¦ì¥Í_¹´¥Í(§t´ä¿D)` = col_integer(),
+  ¾Ç¦ì¥Í_¥¿¦¡­×Åª¾Ç¦ì³°¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°ê¥æ´«¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¥~°êµu´Á¬ã²ß¤Î­Ó¤H¿ïÅª = col_integer(),
+  «D¾Ç¦ì¥Í_¤j±Mªþ³]µØ»y¤å¤¤¤ß¾Ç¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_¤j³°¬ã­×¥Í = col_integer(),
+  «D¾Ç¦ì¥Í_®ü«C¯Z = col_integer(),
+  ¹Ò¥~±M¯Z = col_integer()
+)
+"
+"0","OOOPop103_N<-mutate(OOOPop103_N,"
+"0","                    Pop103 = rowSums(OOOPop103_N[,c(-1,-2)]))"
+"0","OOOPop104_N<-mutate(OOOPop104_N,"
+"0","                    Pop104 = rowSums(OOOPop104_N[,c(-1,-2)]))"
+"0","OOOPop105_N<-mutate(OOOPop105_N,"
+"0","                    Pop105 = rowSums(OOOPop105_N[,c(-1,-2)]))"
+"0","OOOPop106_N<-mutate(OOOPop106_N,"
+"0","                    Pop106 = rowSums(OOOPop106_N[,c(-1,-2)]))"
+"0","perYearPop<- inner_join(OOOPop103_N[,c(1,2,12)],OOOPop104_N[,c(1,2,12)],by = c(""æ´²åˆ¥"", ""åœ‹åˆ¥""))"
+"0","perYearPop<- inner_join(perYearPop,OOOPop105_N[,c(1,2,12)],by = c(""æ´²åˆ¥"", ""åœ‹åˆ¥""))"
+"0","perYearPop<- inner_join(perYearPop,OOOPop106_N[,c(1,2,12)],by = c(""æ´²åˆ¥"", ""åœ‹åˆ¥""))"
+"0","OOOPop103_C$`éžå­¸ä½ç”Ÿ-å¤§é™¸ç ”ä¿®ç”Ÿ`<-as.numeric("
+"0","  gsub(""â€¦"",NA,OOOPop103_C$`éžå­¸ä½ç”Ÿ-å¤§é™¸ç ”ä¿®ç”Ÿ`))"
+"0","OOOPop103_C<-mutate(OOOPop103_C,"
+"0","                    Pop103 = rowSums(OOOPop103_C[,c(-1,-2,-3)], "
+"0","                                     na.rm = TRUE)  )"
+"0","OOOPop104_C$`éžå­¸ä½ç”Ÿ-å¤§é™¸ç ”ä¿®ç”Ÿ`<-as.numeric("
+"0","  gsub(""â€¦"",NA,OOOPop104_C$`éžå­¸ä½ç”Ÿ-å¤§é™¸ç ”ä¿®ç”Ÿ`))"
+"0","OOOPop104_C<-mutate(OOOPop104_C,"
+"0","                    Pop104 = rowSums(OOOPop104_C[,c(-1,-2,-3)], "
+"0","                                     na.rm = TRUE)  )"
+"0","OOOPop105_C<-mutate(OOOPop105_C,"
+"0","                    Pop105 = rowSums(OOOPop105_C[,c(-1,-2,-3)], "
+"0","                                     na.rm = TRUE)  )"
+"0","OOOPop106_C<-mutate(OOOPop106_C,"
+"0","                    Pop106 = rowSums(OOOPop106_C[,c(-1,-2,-3)], "
+"0","                                     na.rm = TRUE)  )"
+"0","perColPop<- full_join( OOOPop103_C[,c(3,13)] , "
+"0","                        OOOPop104_C[,c(3,13)],by = ""å­¸æ ¡åç¨±"")"
+"0","perColPop<- full_join( perColPop , "
+"0","                        OOOPop105_C[,c(3,13)],by = ""å­¸æ ¡åç¨±"")"
+"0","perColPop<- full_join( perColPop , "
+"0","                        OOOPop106_C[,c(3,13)],by = ""å­¸æ ¡åç¨±"")"
+"0","perYearPop<-mutate(perYearPop,"
+"0","  totalPop = rowSums(perYearPop[,c(-1,-2)])) %>%"
+"0","    arrange( desc(totalPop) , desc(Pop106) )"
+"0","# library(readr)"
+"0","# library(RColorBrewer) "
+"0","EZ <- read_csv(""EZ.csv"", "
+"0","               locale = locale(encoding = ""BIG5""))"
+"2","Parsed with column specification:
+cols(
+  ¬Fªv¹êÅé = col_character(),
+  GEC¥N½X = col_character(),
+  `ISO 3166-1¤G¦ì¦r¥À¥N½X` = col_character(),
+  `ISO 3166-0¤T¦ì¦r¥À¥N½X` = col_character(),
+  ¤T¦ì¼Æ¦r¥N½X = col_character(),
+  Stanag¼Ð·Ç¤Æ°ê½X = col_character(),
+  ºô»Úºô¸ô = col_character(),
+  µù»¡ = col_character()
+)
+"
+"0","colnames(EZ)<-c(""åœ‹åˆ¥"",""GECä»£ç¢¼"",""äºŒä½å­—æ¯ä»£ç¢¼"",""iso_a3"","
+"0","                ""ISO3166-1ä¸‰ä½æ•¸å­—ä»£ç¢¼"",""STANAG_1059Stanagæ¨™æº–åŒ–åœ‹ç¢¼"","
+"0","                ""ç¶²éš›ç¶²è·¯"",""è¨»èªª"")"
+"0","countryCode<-left_join( perYearPop[,c(1,2,7)],"
+"0","                        EZ[,c(1,4)] ,"
+"0","                        by = ""åœ‹åˆ¥"")"
+"0","index<-grep(""[A-Z]{3}"",countryCode$iso_a3,invert=T)"
+"0","countryCode$iso_a3[index]<-c(""CHN"",""KOR"",""ANZ"",""VCT"","
+"0","                             ""KNA"",""MHL"",""COD"",""SRB"",""UAR"")"
+"0","data(country.map)"
+"0","final.plot<-merge(country.map,"
+"0","                  countryCode,by=""iso_a3"",all.x=T)%>%"
+"0","            group_by(group)%>%"
+"0","            arrange(order)"

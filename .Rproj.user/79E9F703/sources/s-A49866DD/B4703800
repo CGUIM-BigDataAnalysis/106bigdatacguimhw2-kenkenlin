@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527529034402.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B4703800",
+    "lastKnownWriteTime" : 7020655659723005984,
+    "last_content_update" : 1527529034402,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D22D4664",
+        "caption" : "analData",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=analData&cache_key=D22D4664",
+        "displayedObservations" : 91,
+        "environment" : "",
+        "object" : "analData",
+        "preview" : 0,
+        "totalObservations" : 91,
+        "variables" : 4
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

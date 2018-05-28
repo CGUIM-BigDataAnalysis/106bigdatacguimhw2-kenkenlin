@@ -1,0 +1,35 @@
+"0","wldISPop<-read_csv(""https://goo.gl/9tsyQL"",na = ""NA"")"
+"2","Missing column names filled in: 'X4' [4], 'X5' [5], 'X6' [6]"
+"2","Parsed with column specification:
+cols(
+  ¬w§O = col_character(),
+  °ê§O = col_character(),
+  Á`¤H¼Æ = col_number(),
+  X4 = col_character(),
+  X5 = col_character(),
+  X6 = col_character()
+)
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","wldData2<-data.frame("
+"0","  wldISPop,stringsAsFactors = F"
+"0","  )"
+"0","remove(wldISPop)"
+"0","wldData2<-wldData2[,c(1,2,3)]"
+"0","wldData2<-wldData2%>%arrange(desc(`ç¸½äººæ•¸`))"
+"0","EZ2<-EZ[,c(1,4)]"
+"0","colnames(EZ2) <- c(""åœ‹åˆ¥"",""iso_a3"")"
+"0","countryCode<-left_join( wldData2,EZ2 ,by =  ""åœ‹åˆ¥"")"
+"0","countryCode$iso_a3[grep(""[A-Z]{3}"",countryCode$iso_a3,invert=T)]<-"
+"0","  c(""ANZ"")"
+"0","data(country.map)"
+"0","final.plot<-merge(country.map,"
+"0","                  countryCode,by=""iso_a3"",all.x=T)%>%"
+"0","  group_by(group)%>%"
+"0","  arrange(order)"
