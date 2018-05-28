@@ -1,6 +1,6 @@
 106-2 大數據分析方法 作業二
 ================
-Yi-Ju Tseng
+林耿在B0322013
 
 作業完整說明[連結](https://docs.google.com/document/d/1aLGSsGXhgOVgwzSg9JdaNz2qGPQJSoupDAQownkGf_I/edit?usp=sharing)
 
